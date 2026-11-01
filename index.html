@@ -1888,7 +1888,7 @@
     <div class="nav-brand">
       <div class="nav-logo">GF</div>
       <div class="nav-titles">
-        <h1 class="nav-heading">Project Connection Site Finder</h1>
+        <h1 class="nav-heading">Project Connection Site Finder - SSEN Networks</h1>
       </div>
     </div>
     <div class="nav-actions">
@@ -1936,7 +1936,7 @@
       <div class="intake-card-unified">
         <!-- 1. Archetype Selector -->
         <div class="intake-field-group">
-          <h2 class="intake-field-label">1. Select Project Type</h2>
+          <h2 class="intake-field-label">1. Project Type</h2>
           <div class="intake-archetypes-compact">
             <button type="button" class="archetype-pill is-selected" data-intake-preset="ev_hub"
               onclick="selectIntakePreset('ev_hub')">
@@ -2049,7 +2049,7 @@
         <div class="intake-row-grid">
           <!-- Capacity Column -->
           <div class="intake-field-group">
-            <h2 class="intake-field-label">2. Required Capacity</h2>
+            <h2 class="intake-field-label">2. Capacity</h2>
             <div class="intake-capacity-unified">
               <div class="capacity-field-wrap">
                 <span class="cap-unit-prefix">Power:</span>
@@ -2083,23 +2083,27 @@
 
           <!-- Region Column -->
           <div class="intake-field-group">
-            <h2 class="intake-field-label">3. Target Territory &amp; Area</h2>
-            <div class="intake-region-segmented">
-              <button type="button" class="region-seg-btn active" id="intakeRegionAll"
-                onclick="setIntakeRegion('ALL')">All UK (981)</button>
-              <button type="button" class="region-seg-btn" id="intakeRegionSEPD" onclick="setIntakeRegion('SEPD')">SEPD
-                South (478)</button>
-              <button type="button" class="region-seg-btn" id="intakeRegionSHEPD"
-                onclick="setIntakeRegion('SHEPD')">SHEPD North (503)</button>
-            </div>
-            <div class="intake-sublocation-row">
-              <select id="intakeGeoAreaSelect" class="intake-select-sm" onchange="onIntakeGeoAreaChange()"
-                aria-label="Select Local Authority">
-                <option value="ALL">All Local Authorities</option>
-              </select>
-              <input type="text" id="intakeSearchInput" class="intake-input-sm" placeholder="Search town..."
-                oninput="updateIntakeCandidateCount()" aria-label="Search town name" />
-            </div>
+            <<<<<<< HEAD <h2 class="intake-field-label">3. Target Territory &amp; Area</h2>
+              <div class="intake-region-segmented">
+                <button type="button" class="region-seg-btn active" id="intakeRegionAll"
+                  onclick="setIntakeRegion('ALL')">All UK (981)</button>
+                <button type="button" class="region-seg-btn" id="intakeRegionSEPD"
+                  onclick="setIntakeRegion('SEPD')">SEPD
+                  South (478)</button>
+                <button type="button" class="region-seg-btn" id="intakeRegionSHEPD"
+                  onclick="setIntakeRegion('SHEPD')">SHEPD North (503)</button>
+              </div>
+              =======
+              <h2 class="intake-field-label">3. Local Authority</h2>
+              >>>>>>> 087ac5b51840f142f3d468d13f021259aac66004
+              <div class="intake-sublocation-row">
+                <select id="intakeGeoAreaSelect" class="intake-select-sm" onchange="onIntakeGeoAreaChange()"
+                  aria-label="Select Local Authority">
+                  <option value="ALL">All Local Authorities</option>
+                </select>
+                <input type="text" id="intakeSearchInput" class="intake-input-sm" placeholder="Search town..."
+                  oninput="updateIntakeCandidateCount()" aria-label="Search town name" />
+              </div>
           </div>
         </div>
 
@@ -2107,12 +2111,12 @@
         <div class="intake-action-row">
           <div class="intake-action-left">
             <button type="button" class="btn-intake-launch" onclick="launchDashboardFromIntake()">
-              Find Available Grid Sites &rarr;
+              Go &rarr;
             </button>
-            <span class="intake-counter-preview" id="intakeCandidateCount">Screening 981 SSEN distribution assets</span>
+            <span class="intake-counter-preview" id="intakeCandidateCount">981 SSEN assets</span>
           </div>
           <button type="button" class="btn-intake-skip" onclick="launchDashboardFromIntake(true)">
-            Browse full map &amp; table &rarr;
+            Skip &amp; browse &rarr;
           </button>
         </div>
       </div>
@@ -2460,14 +2464,17 @@
 
     <!-- Quiet Footer -->
     <footer class="portal-footer">
-      <div>Independent Grid Connection Screening Tool &middot; Not affiliated with or endorsed by SSE plc, SSEN, or
+      <<<<<<< HEAD <div>Independent Grid Connection Screening Tool &middot; Not affiliated with or endorsed by SSE plc,
+        SSEN, or
         National Grid ESO.</div>
-      <div style="display:flex;gap:12px;">
-        <button type="button" class="btn-tool" onclick="openTermsModal('terms')">Terms &amp; Disclaimer</button>
-        <button type="button" class="btn-tool" onclick="openTermsModal('sources')">Data Sources</button>
-        <button type="button" class="btn-tool" onclick="openTermsModal('calculations')">Formulas &amp;
-          Methodology</button>
-      </div>
+        =======
+        >>>>>>> 087ac5b51840f142f3d468d13f021259aac66004
+        <div style="display:flex;gap:12px;">
+          <button type="button" class="btn-tool" onclick="openTermsModal('terms')">Terms &amp; Disclaimer</button>
+          <button type="button" class="btn-tool" onclick="openTermsModal('sources')">Data Sources</button>
+          <button type="button" class="btn-tool" onclick="openTermsModal('calculations')">Formulas &amp;
+            Methodology</button>
+        </div>
     </footer>
 
   </main>
@@ -2501,7 +2508,8 @@
           <li><strong>SSEN May 2026 LTDS Table 3 &amp; 7:</strong> Distribution firm capacities, peak demands, and
             5-year forecasts (SEPD: <code>02c9431f...</code>, SHEPD: <code>2bd2c3f3...</code>).</li>
           <li><strong>SSEN May 2026 NSHR Reports:</strong> 2027–2050 multi-scenario headroom envelopes (SEPD:
-            <code>6e1bf42b...</code>, SHEPD: <code>3b368f36...</code>).</li>
+            <code>6e1bf42b...</code>, SHEPD: <code>3b368f36...</code>).
+          </li>
           <li><strong>SSEN May 2026 NDR Reports:</strong> GSP transmission reinforcement schemes (Part 2 Table 2).</li>
         </ul>
       </div>
