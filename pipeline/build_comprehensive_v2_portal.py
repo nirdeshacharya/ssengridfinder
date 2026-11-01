@@ -1848,7 +1848,7 @@ html_content = r"""<!DOCTYPE html>
   <!-- Top Navigation Bar -->
   <header class="portal-nav">
     <div class="nav-brand">
-      <div class="nav-logo">GF</div>
+      <div class="nav-logo">N-SSEN</div>
       <div class="nav-titles">
         <h1 class="nav-heading">Project Connection Site Finder - SSEN Networks</h1>
       </div>
@@ -1881,7 +1881,7 @@ html_content = r"""<!DOCTYPE html>
       <div class="intake-hero-header">
         <h1 class="intake-headline">Find UK Grid Connection Capacity</h1>
         <p class="intake-subheadline">
-          Screen 981 distribution substations across Southern England (SEPD) and Northern Scotland (SHEPD) for available headroom, firm transformer ratings, and transmission curtailment.
+          Across 981 distribution substations across Southern England (SEPD) and Northern Scotland (SHEPD) for available headroom, firm transformer ratings, and transmission curtailment.
         </p>
       </div>
 
@@ -2598,7 +2598,7 @@ html_content = r"""<!DOCTYPE html>
       if (!cap) return;
       const typeLabel = state.projectType === "demand" ? "Demand" : (state.projectType === "generation" ? "Generation" : "Storage");
       const count = currentEvaluated.length;
-      cap.textContent = `Screened ${count} substations for ${state.reqCapMva.toFixed(1)} MVA ${typeLabel}`;
+      cap.textContent = `${count} substations / ${state.reqCapMva.toFixed(1)} MVA ${typeLabel}`;
     }
 
     function runSiteFinder() {
@@ -3766,7 +3766,7 @@ html_content = r"""<!DOCTYPE html>
 
       const countEl = document.getElementById("intakeCandidateCount");
       if (countEl) {
-        countEl.textContent = `Screening ${matchCount} SSEN distribution assets`;
+        countEl.textContent = `${matchCount} SSEN assets`;
       }
     }
 
